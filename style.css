@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0073e6;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
