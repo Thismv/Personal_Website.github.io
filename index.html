@@ -2,205 +2,260 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mohammad Valizadehmoghadam | Risk Analytics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <nav class="top-nav">
-        <div class="brand">MV</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
 
-      <div class="hero-content">
-        <p class="eyebrow">MFRM Candidate • Market & Investment Risk Analytics</p>
-        <h1>Mohammad Valizadehmoghadam</h1>
-        <p class="hero-text">
-          I build quantitative risk analytics, research frameworks, and decision-support tools
-          for financial institutions, with experience across fraud risk intelligence,
-          market resilience research, and data-driven automation.
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">MV</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">MFRM Candidate · Risk Analytics</div>
+      <h1 class="hero-name">Mohammad<br><em>Valizadehmoghadam</em></h1>
+      <p class="hero-desc">
+        Building quantitative risk analytics, research frameworks, and decision-support tools
+        for financial institutions — across fraud intelligence, market resilience, and data-driven automation.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="#">↗ Resume</a>
+        <div class="divider"></div>
+        <a href="#">↗ GitHub</a>
+        <div class="divider"></div>
+        <a href="#">↗ LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title">A foundation in risk,<br>analytics & finance</h2>
+        <p>
+          I am a Master of Financial Risk Management candidate at the University of Toronto
+          with hands-on experience in risk analytics, financial research, and process automation.
         </p>
-
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <p>
+          My work sits at the intersection of financial markets, quantitative modeling, and
+          forward-looking risk identification — where data, judgment, and financial intuition
+          come together to support better decisions.
+        </p>
+        <p>
+          I am particularly interested in market risk, investment risk, and analytical roles
+          where rigorous quantitative thinking drives real-world impact.
+        </p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Roles in Risk & Policy</div>
         </div>
-
-        <div class="quick-links">
-          <a href="#">Resume</a>
-          <a href="#">GitHub</a>
-          <a href="#">LinkedIn</a>
+        <div class="stat-card">
+          <div class="stat-number">41</div>
+          <div class="stat-label">Global Markets Analyzed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">UofT</div>
+          <div class="stat-label">MFRM Candidate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">CIBC</div>
+          <div class="stat-label">Most Recent Co-op</div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">About</p>
-          <h2>A strong foundation in risk, analytics, and financial decision-making</h2>
-        </div>
-
-        <div class="card">
-          <p>
-            I am a Master of Financial Risk Management candidate at the University of Toronto
-            with experience in risk analytics, financial research, and process automation.
-            My interests sit at the intersection of financial markets, quantitative modeling,
-            and forward-looking risk identification.
-          </p>
-          <p>
-            I am particularly interested in market risk, investment risk, and analytical roles
-            where data, judgment, and financial intuition come together to support better decisions.
-          </p>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title reveal">Selected work &<br>analytical initiatives</h2>
+    <p class="section-sub reveal">Quantitative frameworks, risk intelligence systems, and market analytics.</p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-badge badge-live">Fraud Risk</div>
+        <h3>AI-Driven Fraud Risk Intelligence System</h3>
+        <p>Designed a Python-based multi-agent pipeline to analyze unstructured news data and identify emerging fraud risks across jurisdictions.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Automation</span>
+          <span class="project-tag">Risk Monitoring</span>
         </div>
       </div>
-    </section>
-
-    <section id="projects" class="section alt-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Projects</p>
-          <h2>Selected work and analytical initiatives</h2>
-        </div>
-
-        <div class="grid">
-          <article class="project-card">
-            <span class="tag">Fraud Risk</span>
-            <h3>AI-Driven Fraud Risk Intelligence System</h3>
-            <p>
-              Designed a Python-based multi-agent pipeline to analyze unstructured news data
-              and identify emerging fraud risks across jurisdictions.
-            </p>
-            <p class="project-tech">Python • NLP • Automation • Risk Monitoring</p>
-          </article>
-
-          <article class="project-card">
-            <span class="tag">Market Risk</span>
-            <h3>Market Resilience Index (GARCH)</h3>
-            <p>
-              Developed a quantitative framework to analyze volatility, drawdowns, and recovery
-              patterns across 41 global equity markets using time series modeling.
-            </p>
-            <p class="project-tech">Python • GARCH • Time Series • ML</p>
-          </article>
-
-          <article class="project-card">
-            <span class="tag">In Progress</span>
-            <h3>Upcoming Risk Analytics Projects</h3>
-            <p>
-              Additional portfolio, stress testing, and market risk analytics projects will be
-              added here as the site evolves.
-            </p>
-            <p class="project-tech">VaR • Stress Testing • Portfolio Analytics</p>
-          </article>
+      <div class="project-card reveal">
+        <div class="project-badge badge-research">Market Risk</div>
+        <h3>Market Resilience Index (GARCH)</h3>
+        <p>Developed a quantitative framework to analyze volatility, drawdowns, and recovery patterns across 41 global equity markets using time series modeling.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">GARCH</span>
+          <span class="project-tag">Time Series</span>
+          <span class="project-tag">ML</span>
         </div>
       </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Experience</p>
-          <h2>Professional experience</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-top">
-              <h3>CIBC</h3>
-              <span>Jan 2026 – Mar 2026</span>
-            </div>
-            <p class="timeline-role">Risk Analyst (Co-op), Advanced Analytics | Global Operational Risk Management</p>
-            <p>
-              Contributed to fraud risk monitoring, analytics automation, and forward-looking
-              intelligence processes that supported proactive risk identification and stakeholder reporting.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-top">
-              <h3>York University</h3>
-              <span>May 2025 – Aug 2025</span>
-            </div>
-            <p class="timeline-role">Research Assistant</p>
-            <p>
-              Analyzed long-horizon global financial data and built quantitative frameworks
-              to study resilience, volatility, and systemic risk across equity markets.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-top">
-              <h3>Ontario Ministry of Health</h3>
-              <span>Sep 2024 – Dec 2024</span>
-            </div>
-            <p class="timeline-role">Policy Analyst Co-op</p>
-            <p>
-              Supported large-scale capital planning and reporting processes through analysis,
-              stakeholder communication, and data quality improvements.
-            </p>
-          </div>
+      <div class="project-card reveal">
+        <div class="project-badge badge-progress">In Progress</div>
+        <h3>Upcoming Risk Analytics Projects</h3>
+        <p>Additional portfolio, stress testing, and market risk analytics projects will be added here as the site evolves.</p>
+        <div class="project-tags">
+          <span class="project-tag">VaR</span>
+          <span class="project-tag">Stress Testing</span>
+          <span class="project-tag">Portfolio Analytics</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="section alt-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Skills</p>
-          <h2>Technical and analytical toolkit</h2>
-        </div>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title reveal">Professional<br>background</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jan 2026 – Mar 2026</div>
+        <div class="timeline-role">Risk Analyst (Co-op), Advanced Analytics</div>
+        <div class="timeline-company">CIBC · Global Operational Risk Management</div>
+        <p class="timeline-desc">Contributed to fraud risk monitoring, analytics automation, and forward-looking intelligence processes that supported proactive risk identification and stakeholder reporting.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">May 2025 – Aug 2025</div>
+        <div class="timeline-role">Research Assistant</div>
+        <div class="timeline-company">York University</div>
+        <p class="timeline-desc">Analyzed long-horizon global financial data and built quantitative frameworks to study resilience, volatility, and systemic risk across equity markets.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Sep 2024 – Dec 2024</div>
+        <div class="timeline-role">Policy Analyst Co-op</div>
+        <div class="timeline-company">Ontario Ministry of Health</div>
+        <p class="timeline-desc">Supported large-scale capital planning and reporting processes through analysis, stakeholder communication, and data quality improvements.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="skills-wrap">
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">SQL</span>
-          <span class="skill-pill">R</span>
-          <span class="skill-pill">Excel / VBA</span>
-          <span class="skill-pill">Power BI</span>
-          <span class="skill-pill">GARCH</span>
-          <span class="skill-pill">Time Series Analysis</span>
-          <span class="skill-pill">Machine Learning</span>
-          <span class="skill-pill">Risk Analytics</span>
-          <span class="skill-pill">Bloomberg Terminal</span>
-          <span class="skill-pill">Capital IQ</span>
-          <span class="skill-pill">Financial Research</span>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">Skills</div>
+    <h2 class="section-title reveal">Technical &<br>analytical toolkit</h2>
+    <p class="section-sub reveal">Tools and frameworks I work with across quantitative finance and data analytics.</p>
+    <div class="skills-columns">
+      <div class="skills-group reveal">
+        <h4>Programming</h4>
+        <div class="skill-badges">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">R</span>
+          <span class="skill-badge">Excel / VBA</span>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Contact</p>
-          <h2>Let’s connect</h2>
-        </div>
-
-        <div class="card contact-card">
-          <p>
-            I am currently seeking full-time opportunities in market risk, investment risk,
-            and quantitative risk-related roles.
-          </p>
-
-          <div class="contact-links">
-            <a href="mailto:thismv.valizadehmoghadam@rotman.utoronto.ca">Email</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-          </div>
+      <div class="skills-group reveal">
+        <h4>Analytics & Modeling</h4>
+        <div class="skill-badges">
+          <span class="skill-badge">GARCH</span>
+          <span class="skill-badge">Time Series</span>
+          <span class="skill-badge">Machine Learning</span>
+          <span class="skill-badge">Risk Analytics</span>
         </div>
       </div>
-    </section>
-  </main>
+      <div class="skills-group reveal">
+        <h4>Visualization & BI</h4>
+        <div class="skill-badges">
+          <span class="skill-badge">Power BI</span>
+        </div>
+      </div>
+      <div class="skills-group reveal">
+        <h4>Finance Platforms</h4>
+        <div class="skill-badges">
+          <span class="skill-badge">Bloomberg Terminal</span>
+          <span class="skill-badge">Capital IQ</span>
+          <span class="skill-badge">Financial Research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-text reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's<br>connect</h2>
+        <p>I'm currently seeking full-time opportunities in market risk, investment risk, and quantitative risk-related roles. Open to conversations about interesting problems.</p>
+        <div class="contact-links">
+          <a href="mailto:thismv.valizadehmoghadam@rotman.utoronto.ca" class="contact-link">
+            <div class="contact-link-icon">✉</div>
+            thismv.valizadehmoghadam@rotman.utoronto.ca
+          </a>
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            LinkedIn Profile
+          </a>
+          <a href="#" class="contact-link">
+            <div class="contact-link-icon">⌥</div>
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+      <div class="contact-status reveal">
+        <div class="status-dot">Open to opportunities</div>
+        <h3>Available for full-time roles</h3>
+        <p>Graduating 2025 · Based in Toronto · Open to relocation</p>
+        <a href="#" class="btn btn-primary">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & built by <span>Mohammad Valizadehmoghadam</span> · 2025</p>
+  </footer>
+
+  <script>
+    // Sticky nav on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Scroll reveal with sibling stagger
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
+          const idx = siblings.indexOf(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, idx * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
