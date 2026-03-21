@@ -278,7 +278,7 @@ h2.section-title {
 #education { background: var(--dark-b); }
 
 /* ── PROJECTS ── */
-#projects { background: var(--dark-a); }
+#projects { background: var(--dark-b); }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -373,6 +373,8 @@ h2.section-title {
   border: 2px solid var(--accent);
   transition: background var(--transition);
 }
+#education .timeline-item::before { background: var(--dark-b); }
+#experience .timeline-item::before { background: var(--dark-a); }
 .timeline-item:hover::before { background: var(--accent); }
 .timeline-date {
   font-family: var(--font-mono);
@@ -425,7 +427,7 @@ h2.section-title {
 }
 
 /* ── SKILLS ── */
-#skills { background: var(--dark-a); }
+#skills { background: var(--dark-b); }
 .skills-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

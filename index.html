@@ -16,8 +16,8 @@
     <a href="#" class="nav-logo">MV</a>
     <ul class="nav-links">
       <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -83,6 +83,32 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title reveal">Professional<br>background</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jan 2026 – Mar 2026</div>
+        <div class="timeline-role">Risk Analyst (Co-op), Advanced Analytics</div>
+        <div class="timeline-company">CIBC · Global Operational Risk Management</div>
+        <p class="timeline-desc">Contributed to fraud risk monitoring, analytics automation, and forward-looking intelligence processes that supported proactive risk identification and stakeholder reporting.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">May 2025 – Aug 2025</div>
+        <div class="timeline-role">Research Assistant</div>
+        <div class="timeline-company">York University</div>
+        <p class="timeline-desc">Analyzed long-horizon global financial data and built quantitative frameworks to study resilience, volatility, and systemic risk across equity markets.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Sep 2024 – Dec 2024</div>
+        <div class="timeline-role">Policy Analyst Co-op</div>
+        <div class="timeline-company">Ontario Ministry of Health</div>
+        <p class="timeline-desc">Supported large-scale capital planning and reporting processes through analysis, stakeholder communication, and data quality improvements.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-label">Projects</div>
@@ -120,32 +146,6 @@
           <span class="project-tag">Stress Testing</span>
           <span class="project-tag">Portfolio Analytics</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-label">Experience</div>
-    <h2 class="section-title reveal">Professional<br>background</h2>
-    <div class="timeline">
-      <div class="timeline-item reveal">
-        <div class="timeline-date">Jan 2026 – Mar 2026</div>
-        <div class="timeline-role">Risk Analyst (Co-op), Advanced Analytics</div>
-        <div class="timeline-company">CIBC · Global Operational Risk Management</div>
-        <p class="timeline-desc">Contributed to fraud risk monitoring, analytics automation, and forward-looking intelligence processes that supported proactive risk identification and stakeholder reporting.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="timeline-date">May 2025 – Aug 2025</div>
-        <div class="timeline-role">Research Assistant</div>
-        <div class="timeline-company">York University</div>
-        <p class="timeline-desc">Analyzed long-horizon global financial data and built quantitative frameworks to study resilience, volatility, and systemic risk across equity markets.</p>
-      </div>
-      <div class="timeline-item reveal">
-        <div class="timeline-date">Sep 2024 – Dec 2024</div>
-        <div class="timeline-role">Policy Analyst Co-op</div>
-        <div class="timeline-company">Ontario Ministry of Health</div>
-        <p class="timeline-desc">Supported large-scale capital planning and reporting processes through analysis, stakeholder communication, and data quality improvements.</p>
       </div>
     </div>
   </section>
@@ -240,4 +240,11 @@
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
-          const idx = siblings.indexOf
+          const idx = siblings.indexOf(entry.target);
+          setTimeout(() => entry.target.classList.add('visible'), idx * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    setTimeout(() => reveals.forEach(el => observer.observe(el)), 100);
+  </script>
