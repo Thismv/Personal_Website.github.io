@@ -474,7 +474,7 @@ h2.section-title {
 }
 
 /* ── SKILLS ── */
-#skills { background: var(--dark-b); }
+#skills { background: var(--dark-a); }
 .skills-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
