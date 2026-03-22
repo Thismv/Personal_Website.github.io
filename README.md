@@ -4,7 +4,7 @@ Live at: [thismv.github.io/Personal_Website.github.io](https://thismv.github.io/
 
 My personal portfolio site — built with HTML, CSS, and JavaScript, hosted on GitHub Pages.
 
-First time building a website. Used AI (Claude) heavily throughout the process to design, code, and iterate. I use AI wherever it helps me build things faster and understand things better — this project is a good example of that.
+First time building a website all by myself. Used AI (Claude/GPT) throughout the process to design, code, and iterate. I use AI wherever it helps me build things faster and understand things better and this project is an example of that.
 
 ## Files
 
