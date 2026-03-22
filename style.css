@@ -510,7 +510,7 @@ h2.section-title {
 }
 
 /* ── CONTACT ── */
-#contact { background: var(--dark-b); }
+#contact { background: var(--dark-a); }
 .contact-links-compact {
   display: flex;
   flex-direction: column;
