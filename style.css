@@ -474,7 +474,7 @@ h2.section-title {
 }
 
 /* ── SKILLS ── */
-#skills { background: var(--dark-a); }
+#skills { background: var(--dark-b); }
 .skills-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -547,7 +547,7 @@ h2.section-title {
 
 /* ── FOOTER ── */
 footer {
-  background: var(--dark-a);
+  background: var(--dark-b);
   color: rgba(255,255,255,0.25);
   text-align: center;
   padding: 2rem clamp(1.5rem, 8vw, 8rem);
